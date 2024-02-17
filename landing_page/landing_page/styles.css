@@ -1,0 +1,131 @@
+body {
+    background-color: #374861;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+ /* .spacer {
+    display: flex;
+    flex-direction: row;
+    background:linear-gradient(#374861,rgb(95, 117, 150));
+    height:20px;
+    box-shadow: 10px;
+}
+*/
+
+.logo {
+    display: flex;
+    color: white;
+    padding-left: 10px;
+    font-size: 40px ;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: end;
+    padding-right: 10px;
+}
+
+.link {
+    list-style: none;
+    font-size: medium;
+    font-weight: bold;
+}
+
+/* content-1 */
+
+.content-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/* left-content-1 */
+
+.left-content-1 {
+    flex: 1 1 0px; /* Adjust this to control the space taken by the left content */
+    display: flex;
+    flex-direction: column;
+    max-width: 50%; /* Optionally, limit the max width */
+    margin-left: 200px;
+}
+
+h2 {
+    display: flex;
+    color: white;
+    padding-left: 10px;
+    font-size: 30px ;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.h2 {
+    display: flex;
+    align-items: center;
+}
+
+.p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.h2, .p {
+   padding-left: 15px;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    background-color: #3382F6;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 700;
+    border-radius: 20px;
+    font-size: 25px;
+    border-style: none ;
+}
+
+.left-content-1, .right-cotent-1{
+
+}
+
+/* right-content-1 */
+img {
+    max-width: 90%;
+    max-height: 50%;
+    border-radius: 15px ;
+    border: solid white 5px;
+}
+.right-content-1 {
+    flex: 1 1 0px; /* Adjust this to control the space taken by the right content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 50%; /* Optionally, limit the max width */
+    max-width: 700px;
+    max-height: 400px;
+    margin-right: 250px;
+}
+
+.right-content-1 img {
+    object-fit: contain;
+}
