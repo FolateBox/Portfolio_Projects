@@ -1,131 +1,264 @@
+
 body {
-    background-color: #374861;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background: linear-gradient(#1F2937, #192c46);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
     padding: 0;
 }
 
+/* Header */
 
-/* header */
-.header {
+.header, .links {
     display: flex;
     justify-content: space-between;
-    height: 100px;
-}
-
- /* .spacer {
-    display: flex;
     flex-direction: row;
-    background:linear-gradient(#374861,rgb(95, 117, 150));
-    height:20px;
-    box-shadow: 10px;
+    list-style: none;
+    margin: 10px;
+    height: 75px;
 }
-*/
 
 .logo {
-    display: flex;
-    color: white;
-    padding-left: 10px;
-    font-size: 40px ;
-    flex-direction: row;
-    margin-top: 10px;
+    margin-top: 0;
+    margin-left: 5px;
+    font-size: 75px;
+    font-weight: bolder;
 }
 
-.links {
-    display: flex;
-    flex-direction: row;
+.links, .link {
+    align-items: flex-end;
     gap: 10px;
-    align-items: end;
-    padding-right: 10px;
-}
-
-.link {
-    list-style: none;
-    font-size: medium;
-    font-weight: bold;
 }
 
 /* content-1 */
 
 .content-1 {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-/* left-content-1 */
-
-.left-content-1 {
-    flex: 1 1 0px; /* Adjust this to control the space taken by the left content */
-    display: flex;
-    flex-direction: column;
-    max-width: 50%; /* Optionally, limit the max width */
-    margin-left: 200px;
-}
-
-h2 {
-    display: flex;
-    color: white;
-    padding-left: 10px;
-    font-size: 30px ;
-    flex-direction: row;
-    margin-top: 10px;
-}
-
-.h2 {
-    display: flex;
-    align-items: center;
-}
-
-.p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.h2, .p {
-   padding-left: 15px;
-}
-
-.button {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-button {
-    background-color: #3382F6;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 700;
-    border-radius: 20px;
-    font-size: 25px;
-    border-style: none ;
-}
-
-.left-content-1, .right-cotent-1{
-
-}
-
-/* right-content-1 */
-img {
-    max-width: 90%;
-    max-height: 50%;
-    border-radius: 15px ;
-    border: solid white 5px;
-}
-.right-content-1 {
-    flex: 1 1 0px; /* Adjust this to control the space taken by the right content */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 50%; /* Optionally, limit the max width */
-    max-width: 700px;
-    max-height: 400px;
-    margin-right: 250px;
+    justify-content: space-between;
+    height: 500px;
 }
 
 .right-content-1 img {
-    object-fit: contain;
+    max-width: 350px;
+    max-height: 350px;
+    /* border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-width: 5px; */
+}
+
+.left-content-1, 
+.right-content-1 {
+    display: flex;
+    flex-basis: 50%; /* Start off each taking half the parent's width */
+    flex-grow: 1; /* Allow each to grow to fill the container */
+    flex-shrink: 1; /* Allow each to shrink if necessary */
+    max-width: 50%; /* Ensure they don't grow beyond half of the container's width */
+    margin: 20px;
+}
+
+.left-content-1 {
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.button-info {
+    justify-content: center;
+    align-items: start;
+    gap: 12.5px;
+    flex-direction: column;
+    max-width: 350px;
+    max-height: 350px;
+    border-radius: 15px;
+}
+
+.button-info h2 {
+    align-self: flex-start;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    flex-grow: 1 ;
+}
+
+.button-info h2,
+ .button-info p,
+  .button-info button {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.button-info h2,
+ .button-info p {
+    color: white;
+}
+
+.button-info p {
+    text-indent: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.button-info button {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    background-color: #2da4c9;
+    border: none;
+    color: white;
+    padding: 10px ;
+    text-decoration: none;
+    font-size: 16px;
+    width: fit-content;
+}
+
+.right-content-1 {
+    justify-content: flex-start ;
+    align-items: center;
+}
+
+/* content-2 */
+
+.content-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.photos-text {
+    height: 275px;
+    width: auto;
+    background-color: white;
+}
+
+.top-section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: white;
+    height: 100px;
+}
+
+.photos-text img {
+    display: flex;
+    flex-direction: column ;
+}
+
+.photo-box {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.photos-text ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.photo-box img {
+    width: 150px; /* Example fixed width */
+    height: 150px; /* Example fixed height */
+    object-fit: cover;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #2da4c9;
+    border-width: 5px;
+}
+
+.photo-box span {
+    color:black;
+    margin-top: 10px;
+}
+
+/* content-3 */
+
+.content-3 {
+    display: flex;
+    color: white;
+    background-color: #E5E7EB ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.text p {
+    max-width: 500px;
+    max-height: 400px;
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+    margin: 0;
+}
+
+.text {
+    margin-top: 30px;
+}
+
+.signature {
+    display: flex;
+    color:black;
+    flex-direction: column ;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 50%;
+    margin: 0;
+    font-size: 24px;
+}
+
+/* content-4 */
+
+.content-4 {
+    display: flex ;
+    width: auto;
+    height: 300px ;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    background-color: #3882F6;
+    width: 750px ;
+    height: 100px;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.left-content-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-content-2 h2 {
+    margin-bottom: 5px;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+.left-content-2 p {
+    margin-top: 5px;
+    margin-left: 45px;
+}
+
+.button-2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 50px;
+    width: auto;
+}
+
+.button-2 button {
+    border-radius: 10px;
+    font-size: 20px;
+    border-color: white;
+    border-width: 2px;
+    background-color: #3882F6;
+    color: white;
+    border-style: solid;
+    width:110px;
+    height: 35px;
 }
